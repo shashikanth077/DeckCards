@@ -15,14 +15,18 @@ class Board {
 
   // Distribute cards on game start
   private distributePlayerCards() {
+
     const deck = new Deck();
     deck.addCards();
     deck.shuffleDeck();
     const numberOfCards = deck.cards.length;
+
+    console.log("distribute the cards",deck.cards);
+
     const numberOfPlayers = this.players.length;
     const splitWays = Math.floor(numberOfCards / numberOfPlayers);
 
-    console.log("this.players",this.players);
+    console.log("splitWays",splitWays);
     
     // Give equal number of cards
     this.players.forEach((player: Player, index: number) => {
@@ -31,21 +35,26 @@ class Board {
 
     // Share leftover cards
     if (deck.cards.length) {
-      console.log(this.players);
       deck.cards.forEach((card: Card, index: number) => {
         this.players[index].playerCards.push(card);
       });
+
+      console.log("after destributio", this.players);
     }
   }
+
 
   // Start game
   start(playerCount: number) {
     console.log("start game",playerCount);
-    for (let i = 0; i <= 2 - 1; i++) {
+    for (let i = 0; i <= playerCount - 1; i++) {
       this.players.push(new Player(`Player ${i + 1}`));
     }
+
+    console.log("as per plater spread cards");
     this.distributePlayerCards();
-    // Set current turn to player 1
+    
+    console.log("set the turn");
     this.turn = this.players[0].id;
   }
 

@@ -22,6 +22,7 @@ export const shuffleCards = (array: Card[]): Card[] => {
     newArray[randomIndex] = temporaryValue;
   }
 
+  console.log("after shuffle card",newArray);
   return newArray;
 };
 

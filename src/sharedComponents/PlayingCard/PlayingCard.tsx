@@ -9,7 +9,7 @@ interface Props {
 const PlayingCard = ({ card }: Props) => {
   return (
     <div
-      className={`playingCard ${card.suit} ${card.value}}  justify-content-center align-items-center d-flex flex-nowrap`}
+      className={`playingCard ${card.suit} cards${card.value}  justify-content-center align-items-center d-flex flex-nowrap`}
     >
       &nbsp;
     </div>
