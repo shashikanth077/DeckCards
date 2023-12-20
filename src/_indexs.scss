@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap");
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.62em;
+    text-transform: none;
+    letter-spacing: 0.1px;
+    color: #505056;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+  .homebtn-secondary,.homebtn-primary {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    max-width: 100%;
+    padding: 10px;
+    margin-right: 7px;
+    width: 94px;
+  }
+  .w-full {
+    width:100%
+  }
+  .mb-12 
+  {
+    margin-bottom: 12px;
+  }
+  .ml-4 {
+    margin-left:5px;
+  }
